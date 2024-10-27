@@ -1,7 +1,7 @@
 import { Recipe } from "../types/type";
 
 export default function RecipeCardResult({ recipe }: RecipeCardResultProps) {
-  const baseUrl = "https://recipe.sinaukode.my.id/storage";
+  const baseUrl = "https://recipe.sinaukode.my.id/public/storage";
 
   return (
     <>
