@@ -36,7 +36,7 @@ export default function CategoryDetails() {
         return <p>Category not found</p>;
     }
 
-    const baseUrl = "https://recipe.sinaukode.my.id/public/storage"
+    const baseUrl = "https://recipe.sinaukode.my.id/storage"
 
   return (
     <>
