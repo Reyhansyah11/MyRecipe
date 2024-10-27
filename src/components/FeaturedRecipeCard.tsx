@@ -8,7 +8,7 @@ export default function FeaturedRecipeCard({ recipe }: FeaturedRecipeCardProps) 
     <>
       <div>
         <div className="card">
-          <div className="relative w-[200px] h-[280px] rounded-[30px] bg-white overflow-hidden">
+          <div className="relative w-[200px] h-[280px] rounded-[30px]">
             <img
               src={`${baseUrl}/${recipe.thumbnail}`}
               className="absolute w-full h-full object-cover"
