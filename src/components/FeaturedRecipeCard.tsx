@@ -1,9 +1,8 @@
 import { Recipe } from "../types/type";
 
-export default function FeaturedRecipeCard({
-  recipe,
-}: FeaturedRecipeCardProps) {
-  const baseUrl = "https://recipe.sinaukode.my.id/storage";
+export default function FeaturedRecipeCard({ recipe }: FeaturedRecipeCardProps) {
+
+   const baseUrl = "https://recipe.sinaukode.my.id/storage"
 
   return (
     <>
@@ -12,14 +11,14 @@ export default function FeaturedRecipeCard({
           <div className="relative w-[200px] h-[280px] rounded-[30px] bg-white overflow-hidden">
             <img
               src={`${baseUrl}/${recipe.thumbnail}`}
-              className="absolute w-full h-full object-cover z-[99999] "
+              className="absolute w-full h-full object-cover"
               alt="thumbnails"
               // onError={(e) => {
               //   console.error('Image failed to load:', e);
               //   console.log('Failed URL:', `${baseUrl}/${recipe.thumbnail}`);
               // }}
             />
-            <div className="gradient-filter absolute w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)40.47%,#000000_81.6%)] z-10" />
+            <div className="gradient-filter absolute w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)40.47%,#000000_81.6%)]" />
             <div className="relative flex flex-col h-full justify-between p-5 z-20">
               <div className="flex shrink-0 items-center w-fit rounded-full py-1 px-2 bg-white/20 backdrop-blur">
                 <img
@@ -27,7 +26,7 @@ export default function FeaturedRecipeCard({
                   className="w-4 h-4"
                   alt="star"
                 />
-                <span className="font-semibold text-xs leading-[18px] text-black">
+                <span className="font-semibold text-xs leading-[18px] text-white">
                   4.5
                 </span>
               </div>
