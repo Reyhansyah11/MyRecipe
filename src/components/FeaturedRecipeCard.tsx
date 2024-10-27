@@ -12,7 +12,7 @@ export default function FeaturedRecipeCard({
           <div className="relative w-[200px] h-[280px] rounded-[30px] bg-white overflow-hidden">
             <img
               src={`${baseUrl}/${recipe.thumbnail}`}
-              className="absolute w-full h-full object-cover z-10 "
+              className="absolute w-full h-full object-cover z-[99999] "
               alt="thumbnails"
               // onError={(e) => {
               //   console.error('Image failed to load:', e);
