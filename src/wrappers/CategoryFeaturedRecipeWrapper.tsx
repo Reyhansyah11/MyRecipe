@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import RecipeCardResult from "../components/RecipeCardResult";
+import FeaturedRecipeCard from "../components/FeaturedRecipeCard";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Category } from "../types/type";
@@ -61,7 +61,7 @@ export default function CategoryFeaturedRecipeWrapper() {
               category.recipes.map((recipe) => (
                 <SwiperSlide key={recipe.id} className="swiper-slide !w-fit">
                   <Link to={`/recipe/${recipe.slug}`}>
-                    <RecipeCardResult recipe={recipe} />
+                    <FeaturedRecipeCard recipe={recipe} />
                   </Link>
                 </SwiperSlide>
               ))
