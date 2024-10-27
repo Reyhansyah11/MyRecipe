@@ -41,7 +41,7 @@ export default function RecipeDetails() {
     return <p>Recipe not found</p>;
   }
 
-  const baseUrl = "https://recipe.sinaukode.my.id/public/storage";
+  const baseUrl = "https://recipe.sinaukode.my.id/storage";
 
   return (
     <>

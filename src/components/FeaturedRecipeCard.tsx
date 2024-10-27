@@ -2,7 +2,7 @@ import { Recipe } from "../types/type";
 
 export default function FeaturedRecipeCard({ recipe }: FeaturedRecipeCardProps) {
 
-   const baseUrl = "https://recipe.sinaukode.my.id/public/storage"
+   const baseUrl = "https://recipe.sinaukode.my.id/storage"
 
   return (
     <>
