@@ -27,7 +27,7 @@ export default function FeaturedRecipeCard({
                   className="w-4 h-4"
                   alt="star"
                 />
-                <span className="font-semibold text-xs leading-[18px] text-white">
+                <span className="font-semibold text-xs leading-[18px] text-black">
                   4.5
                 </span>
               </div>
