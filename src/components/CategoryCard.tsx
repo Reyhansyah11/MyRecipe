@@ -1,7 +1,7 @@
 import { Category } from "../types/type";
 
 export default function CategoryCard({ category }: CategoryCardProps) {
-  const baseUrl = "https://recipe.sinaukode.my.id/storage";
+  const baseUrl = "https://recipe.sinaukode.my.id/public/storage";
 
   return (
     <>
