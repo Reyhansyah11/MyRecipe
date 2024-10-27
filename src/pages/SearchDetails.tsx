@@ -37,6 +37,7 @@ export default function RecipeDetails() {
       );
       setSearchResults(response.data.data);
     } catch (error) {
+      console.error(error);
       setError("error searching for recipes");
     } finally {
       setLoading(false);
