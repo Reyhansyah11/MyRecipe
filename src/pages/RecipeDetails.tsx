@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import IngredientCard from "../components/IngredientCard";
 import { Link, useParams } from "react-router-dom";
 import { Recipe } from "../types/type";
 import axios from "axios";
