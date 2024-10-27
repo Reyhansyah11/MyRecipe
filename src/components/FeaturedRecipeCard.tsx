@@ -9,6 +9,9 @@ export default function FeaturedRecipeCard({ recipe }: FeaturedRecipeCardProps) 
       <div>
         <div className="card">
           <div className="relative w-[200px] h-[280px] rounded-[30px] bg-white overflow-hidden">
+            <div className="gradient-filter absolute w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)40.47%,#000000_81.6%)]" />
+            <div className="relative flex flex-col h-full justify-between p-5 z-20">
+              <div className="flex shrink-0 items-center w-fit rounded-full py-1 px-2 bg-white/20 backdrop-blur">
             <img
               src={`${baseUrl}/${recipe.thumbnail}`}
               className="absolute w-full h-full object-cover"
@@ -18,9 +21,6 @@ export default function FeaturedRecipeCard({ recipe }: FeaturedRecipeCardProps) 
               //   console.log('Failed URL:', `${baseUrl}/${recipe.thumbnail}`);
               // }}
             />
-            <div className="gradient-filter absolute w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)40.47%,#000000_81.6%)]" />
-            <div className="relative flex flex-col h-full justify-between p-5 z-20">
-              <div className="flex shrink-0 items-center w-fit rounded-full py-1 px-2 bg-white/20 backdrop-blur">
                 <img
                   src="/assets/images/icons/Star 1.svg"
                   className="w-4 h-4"
