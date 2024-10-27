@@ -13,6 +13,10 @@ export default function FeaturedRecipeCard({ recipe }: FeaturedRecipeCardProps) 
               src={`${baseUrl}/${recipe.thumbnail}`}
               className="absolute w-full h-full object-cover"
               alt="thumbnails"
+              onError={(e) => {
+                console.error('Image failed to load:', e);
+                console.log('Failed URL:', `${baseUrl}/${recipe.thumbnail}`);
+              }}
             />
             <div className="gradient-filter absolute w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)40.47%,#000000_81.6%)] z-10" />
             <div className="relative flex flex-col h-full justify-between p-5 z-20">
